@@ -1,0 +1,101 @@
+.FavoritesContainer{
+    background-color: #f8c6c6;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    margin: auto;
+    width: 50%;
+    box-shadow: 0 2px 5px #b0aaf5;
+}
+
+#RecipeName{
+    font-size: 25px;
+}
+
+.Title{
+    color: white;
+}
+
+.EmptyMessage{
+    font-weight: bold;
+}
+
+.List{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ListItem{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 90%;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ListItem:hover{
+    box-shadow: 0 2px 5px white;
+}
+
+.RemoveButton{
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.RemoveButton:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 1175px) {
+    #RecipeName{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 785px) {
+
+    #RecipeName{
+        font-size: 15px !important;
+    }
+
+    .ListItem{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    #RecipeImage{
+        width: 200px !important;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .FavoritesContainer{
+        width: 70%;
+    }
+
+    #RecipeName{
+        font-size: 15px;
+    }
+
+    .ListItem{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #RecipeImage{
+        width: 150px !important;
+    }
+}

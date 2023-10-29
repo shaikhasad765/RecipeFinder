@@ -7,6 +7,45 @@
   pointer-events: none;
 }
 
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-y: scroll;
+  scrollbar-width: 0px; 
+  scrollbar-color: transparent transparent; 
+  -ms-overflow-style: none; 
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent; 
+}
+
+
+.Container {
+  position: relative;
+}
+
+.BackgroundContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./Components/Assets/Images/main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.ContentContainer {
+  z-index: 1;
+  position: relative;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

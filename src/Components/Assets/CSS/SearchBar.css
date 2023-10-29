@@ -1,0 +1,33 @@
+.searchBar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.SInput{
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    background-color: whitesmoke;
+    transition: all 0.5s ease-in-out;
+}
+
+.SInput:hover{
+    box-shadow: 0 2px 5px #f8c1c1;
+}
+
+@media (max-width: 575px) {
+    .SInput{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 374px) {
+    .SInput{
+        font-size: 13px;
+    }
+}

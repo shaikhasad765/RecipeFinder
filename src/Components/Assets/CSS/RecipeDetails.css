@@ -1,0 +1,132 @@
+.DetailsContainer{
+    margin: auto;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    width: 60%;
+    padding: 20px;
+    margin-top: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h2.Title {
+    color: black;
+}
+
+
+.ImageContainer{
+    text-align: center;
+    width: auto;
+    padding: 20px;
+    height: auto;
+}
+
+.details{
+    color: black;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: whitesmoke;
+}
+
+.RecipeImage{
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 5px solid white;
+}
+
+.ButtonContainer{
+    display: flex;
+    margin-top: 20px;
+}
+
+.AddToFavoritesButton{
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.RemoveFromFavoritesButton{
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.RemoveFromFavoritesButton:hover, .AddToFavoritesButton:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 1700px) {
+    .RecipeImage{
+        width: 150px !important;
+    }
+
+    .details{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 765px) {
+
+    .ImageContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .RecipeImage{
+        width: 300px !important;
+        margin-left: 0px !important;
+    }
+
+    .details{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 765px) {
+    .RecipeImage{
+        width: 150px !important;
+    }
+
+    .details{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 376px) {
+
+    .DetailsContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ImageContainer{
+        width: 90% !important;
+    }
+
+    .RecipeImage{
+        width: 150px !important;
+    }
+
+    .details{
+        font-size: 8px;
+    }
+}
